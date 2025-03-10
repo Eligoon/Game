@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Game {
+
+    private String name;
+    private int maxPlayers;
+    private List<Player> players;
+
+        public Game(String name, int maxPlayers){
+        this.name = name;
+        this.maxPlayers = maxPlayers;
+        players = new ArrayList<>();
+    }
+
+    public void registerPlayers(){
+     //boolean
+     while(this.players.size() <= this.maxPlayers) {
+
+        //String playerName = ui.promptText("Tast spiller navn");
+
+
+        // this.createPlayer(playerName, 0);
+     }
+    }
+
+
+    private void createPlayer(String name, int score){
+        Player p = new Player(name, score);
+        players.add(p);
+    }
+    public void displayPlayers(){
+        for(Player p:players){
+            System.out.println(p);
+        }
+
+    }
+}

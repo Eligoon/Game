@@ -1,0 +1,19 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+
+
+
+
+#environment
+.idea/
+
+
+out/
+
+.DS_Store
+Game.iml
