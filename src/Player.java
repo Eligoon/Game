@@ -10,8 +10,12 @@ public class Player {
     @Override
     public String toString(){
 
-        return name + ": "+ score;
+        return name + ", "+ score;
     }
 
 
+    public void addScore(int points) {
+
+        this.score+= points;
+    }
 }
