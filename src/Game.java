@@ -8,7 +8,7 @@ public class Game {
     private int maxPlayers;
     private List<Player> players;
 
-        public Game(String name, int maxPlayers){
+    public Game(String name, int maxPlayers){
         this.name = name;
         this.maxPlayers = maxPlayers;
         players = new ArrayList<>();
@@ -18,10 +18,8 @@ public class Game {
      //boolean
      while(this.players.size() <= this.maxPlayers) {
 
-        //String playerName = ui.promptText("Tast spiller navn");
-
-
-        // this.createPlayer(playerName, 0);
+        String playerName = ui.promptText("Tast spiller navn");
+        this.createPlayer(playerName, 0);
      }
     }
 
