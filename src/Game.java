@@ -10,12 +10,13 @@ public class Game {
 
     private String name;
     private int maxPlayers;
-    private List<Player> players;
+    private ArrayList<Player> players;
 
     public Game(String name, int maxPlayers){
         this.name = name;
         this.maxPlayers = maxPlayers;
         players = new ArrayList<>();
+
     }
 
 
@@ -37,7 +38,7 @@ public class Game {
 
     void runGame(){
 
-        players.get(0).addScore(50);
+
 
     }
 
@@ -74,6 +75,7 @@ public class Game {
           playerData.add(s);
 
       }
-         io.saveData(playerData, "data/playerData.csv", "Name, Score");
+
+        io.saveData(playerData, "data/playerData.csv", "Name, Score");
     }
 }

@@ -19,7 +19,7 @@ public class TextUI {
             int choice = promptNumeric(msg);
             choices.add(options.get(choice-1));
         }
-        return null;
+        return choices;
     }
 
     public void displayList(ArrayList<String>list, String msg) {
@@ -32,7 +32,7 @@ public class TextUI {
         System.out.println(msg);//Stille brugeren et spørgsmål
         String input = sc.nextLine();          //Give brugere et sted at placere sit svar og vente på svaret
         int numInput = Integer.parseInt(input);       //Konvertere svaret til et tal
-        sc.nextLine();//flush
+
         return numInput;
     }
 
