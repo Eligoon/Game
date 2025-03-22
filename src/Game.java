@@ -36,11 +36,6 @@ public class Game {
         displayPlayers();
     }
 
-    void runGame(){
-
-
-
-    }
 
 
     public void registerPlayers(){
@@ -75,7 +70,8 @@ public class Game {
           playerData.add(s);
 
       }
-
+        //Test om promptChoice virker
+        //ui.displayList(ui.promptChoice(playerData, 3, "vælg en spiller"), "Din spiller liste");
         io.saveData(playerData, "data/playerData.csv", "Name, Score");
     }
 }

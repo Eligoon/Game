@@ -12,7 +12,10 @@ public class Main {
 
         Game g = new Game("Yatzy",3);
         g.startSession();
-       // g.runGame();
+
+        // run the game loop
+
+
         g.endSession();
     }
 }
