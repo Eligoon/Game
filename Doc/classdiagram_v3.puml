@@ -7,7 +7,6 @@ class Player
 
 Game *-- Player
 Game *-- TextUI
-
 Game *-- FileIO
 
 
@@ -19,7 +18,7 @@ class Game {
 - TextUI ui
 - FileIO io
 + Game(String name, int maxPlayers)
-- void createPlayer(String name, int score
+- void createPlayer(String name, int balance)
 + void registerPlayers()
 + void startSession()
 + void endSession()
