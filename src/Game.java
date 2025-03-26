@@ -7,6 +7,7 @@ public class Game {
     private String name;
     private int maxPlayers;
     private List<Player> players;
+    TextUI ui = new TextUI();
 
     public Game(String name, int maxPlayers){
         this.name = name;
