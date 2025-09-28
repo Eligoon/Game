@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Game {
 
@@ -16,12 +15,12 @@ public class Game {
     }
 
     public void registerPlayers(){
-     //boolean
-     while(this.players.size() <= this.maxPlayers) {
+        //boolean
+        while(this.players.size() <= this.maxPlayers) {
 
-        String playerName = ui.promptText("Tast spiller navn");
-        this.createPlayer(playerName, 0);
-     }
+            String playerName = ui.promptText("Tast spiller navn");
+            this.createPlayer(playerName, 0);
+        }
     }
 
 

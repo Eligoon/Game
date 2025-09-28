@@ -1,4 +1,4 @@
- @startuml
+@startuml
 'https://plantuml.com/class-diagram
 
 class Game
@@ -8,7 +8,7 @@ class Player
 Game *-- Player
 Game *-- TextUI
 
-Game *-- FileIO
+'Game *-- FileIO
 
 
 
@@ -17,12 +17,12 @@ class Game {
 - int maxPlayers
 - List<Player>
 - TextUI ui
-- FileIO io
+'- FileIO io
 + Game(String name, int maxPlayers)
 - void createPlayer(String name, int score
 + void registerPlayers()
 '+ void registerPlayers(String path)
-+ void endSession()
+'+ void endSession()
 
 }
 class Player {
@@ -45,9 +45,5 @@ class TextUI {
 + void displayList(ArrayList<Integer> choices, ArrayList<Integer> options, String msg)
 }
 
-class FileIO{
-+ void saveData(ArrayList<String>, String path, String header)
-+ ArrayList<String> readData(String path)
-}
 
 @enduml
