@@ -11,11 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        FileIO io = new FileIO();
         Game g = new Game("Yatzy",6);
-        g.registerPlayers();
+        g.startSession();
         g.displayPlayers();
-
-
+        g.endSession();
     }
 }
